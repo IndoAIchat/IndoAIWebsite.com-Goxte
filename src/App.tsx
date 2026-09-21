@@ -20,10 +20,10 @@ export default function App() {
 
   const handleDownload = () => {
     setDownloadCount((prev) => prev + 1);
-    const apkUrl = 'https://example.com/path-to-your/GoxNep.apk';
+    const apkUrl = 'https://example.com/path-to-your/GoxNepAI.apk';
     const link = document.createElement('a');
     link.href = apkUrl;
-    link.setAttribute('download', 'GoxNep.apk');
+    link.setAttribute('download', 'GoxNepAI.apk');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -65,7 +65,7 @@ export default function App() {
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "GoxNep",
+    "name": "GoxNepAI",
     "operatingSystem": "ANDROID",
     "applicationCategory": "BrowserApplication",
     "aggregateRating": {
@@ -144,7 +144,7 @@ export default function App() {
               <Zap className="w-6 h-6 text-white fill-current" />
             </div>
             <span className={`text-2xl font-extrabold tracking-tight bg-clip-text text-transparent ${darkMode ? 'bg-gradient-to-r from-white via-slate-200 to-slate-400' : 'bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500'}`}>
-              GoxNep
+              GoxNepAI
             </span>
           </a>
           <button
@@ -168,7 +168,7 @@ export default function App() {
             <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center">
               <Zap className="w-5 h-5 text-white fill-current" />
             </div>
-            <span className={`text-xl font-bold ${menuTitle}`}>GoxNep Menu</span>
+            <span className={`text-xl font-bold ${menuTitle}`}>GoxNepAI Menu</span>
           </div>
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -218,7 +218,7 @@ export default function App() {
           </div>
         </nav>
         <div className={`max-w-6xl w-full mx-auto text-center text-sm ${menuFooter} border-t ${menuFooterBorder} pt-6`}>
-          © {new Date().getFullYear()} GoxNep Inc. All rights reserved.
+          © {new Date().getFullYear()} GoxNepAI Inc. All rights reserved.
         </div>
       </div>
 
@@ -237,7 +237,7 @@ export default function App() {
           </span>
         </h1>
         <p className={`text-lg sm:text-xl ${heroSubtext} max-w-2xl font-normal leading-relaxed mb-10 animate-[fadeInUp_0.8s_ease-out_0.2s_both]`}>
-          We believe privacy and performance belong together. Download <span className={`font-semibold ${darkMode ? 'text-white' : 'text-slate-900'}`}>GoxNep</span> to upgrade the way you browse and work online.
+          We believe privacy and performance belong together. Download <span className={`font-semibold ${darkMode ? 'text-white' : 'text-slate-900'}`}>GoxNepAI</span> to upgrade the way you browse and work online.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto animate-[fadeInUp_0.8s_ease-out_0.3s_both]">
           <button
@@ -252,7 +252,7 @@ export default function App() {
           href="#other-platforms"
           className={`mt-6 text-sm transition-colors flex items-center gap-1 group animate-[fadeInUp_0.8s_ease-out_0.4s_both] ${otherPlatform}`}
         >
-          Need GoxNep for other platforms?
+          Need GoxNepAI for other platforms?
           <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </a>
       </section>
@@ -300,7 +300,7 @@ export default function App() {
       {/* Footer */}
       <footer className={`border-t ${footerBorder} py-10 text-center ${footerText} text-sm`}>
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} GoxNep. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} GoxNepAI. All rights reserved.</p>
           <div className={`flex gap-6 ${footerLink} text-sm`}>
             <a href="#" className="hover:text-blue-500 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-blue-500 transition-colors">Terms of Service</a>
